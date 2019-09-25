@@ -11,6 +11,7 @@
 library(tidyverse)
 
 #loading data
+# assuming that the data is in a subfolder called `data` containing the original folder structure
 feature_names <- read_lines("data/features.txt")
 activity_labels <- read_fwf("data/activity_labels.txt", col_positions = fwf_empty("data/activity_labels.txt"))
 
@@ -53,8 +54,16 @@ tidy_data_tot <-
          contains("mean()"), 
          contains("std()"))
 
-tidy_data_means <- 
-  tidy_data_tot %>% 
-  group_by(subject, activity_label) %>% 
-  summarise_all(mean)
+
+#### --------
+
+# This part is only used for submitting a summary for the coursera-project
+
+# tidy_data_means <- 
+#   tidy_data_tot %>% 
+#   group_by(subject, activity_label) %>% 
+#   summarise_all(mean)
+
+# write file
+# write.table(tidy_data_means, file = "tidy_data_means.txt", row.names = FALSE)
 
