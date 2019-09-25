@@ -1,8 +1,8 @@
 # Getting and Cleaning Data Course Project - Coursera
 
-This repo was created for the Getting and Cleaning Data Course Project. It contains code to work with the "Human Activity Recognition Using Smartphones Data Set" [^ref] which can be found [here](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones).
+This repo was created for the Getting and Cleaning Data Course Project. It contains code to work with the "Human Activity Recognition Using Smartphones Data Set" which can be found [here](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones). (see also Citation below)
 
-[^ref]: *Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012*
+
 
 ## Description
 
@@ -58,5 +58,7 @@ The set of variables that were estimated and selected from these signals are:
 - mean(): Mean value
 - std(): Standard deviation
 
+## Citation
 
+*Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012*
 
