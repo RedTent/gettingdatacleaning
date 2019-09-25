@@ -1,6 +1,30 @@
-## Code book
+# Code book
 
-This is a description of the variable names in `tidy_data_tot`
+This is a description of the dataset in `tidy_data_tot`.
+
+## Transformations
+
+1. The following fileshave been read into dataframes with the same names (but without the .txt):
+    - features.txt
+    - activity_labels.txt
+    - train/X_train.txt
+    - train/y_train.txt
+    - train/train_subject.txt
+    - test/X_test.txt
+    - test/y_test.txt
+    - test/test_subject.txt
+2. the features in X_test and X_train have been given the names from features.txt
+3. the labels from y_test and y_train have been given the name `activity_code`.
+4. the subjects from subject_test and subject_train haven been given the name `subject`.
+5. the data in activity_labels haven been given the names `acitvity_code` and `activity_label`.
+6. the columns in the ..._test and ..._train dataframes have been combined into `test` and `train`.
+7. the rows in `train` and `test` have been combined into a single dataframe: `combined`.
+8. `combined` was left-joined with `activity_labels` to add the names of the activities.
+9. The columns containing, `subject`, `activity_label`, `*mean()*` and `*std()*` where selected.
+
+
+
+## Variables
 
 ### Labels
 
